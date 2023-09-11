@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+body{
+    background-color:hsl(212, 45%, 89%);
+    position: relative;
+}
+.qr-code-container{
+    height:500px;
+    margin: auto;
+    width:300px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.qr-code-img{
+    border-radius: 20px;
+    margin: 20px;
+}
+span,p{
+    font-family: 'Outfit', sans-serif;
+}
+span{
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    font-size: 18px;
+}
+p{
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+}
+.container-text{
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .qr-code-container{
+        height:fit-content;
+        margin: auto;
+        margin-top: 35%;
+        width:250px;
+        gap:5px;
+    }
+    span{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    span{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        position: relative;
+    }
+    .qr-code-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height:fit-content;
+        margin:auto;
+        margin-top:5%;
+        width:500px;
+    }
+    span{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .qr-code-container{
+        height:500px;
+        margin:auto;
+        margin-top:5%;
+        width:300px;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 20px;
+    }
+    span{
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+        font-size: 18px;
+    }
+    p{
+        font-weight: 400;
+        color: hsl(220, 15%, 55%);
+        font-size: 15px;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+    .qr-code-container{
+        height:fit-content;
+        width:50em;
+    }
+    span{
+        font-size: 55px;
+    }
+    p{
+        font-size: 40px;
+    }
+}
